@@ -1,15 +1,18 @@
 <script lang="ts">
+	import Grid from "./Grid.svelte";
 </script>
 
 <main class="game">
-	<div class="info">a</div>
-	<div class="grid">s</div>
-	<div class="info">a</div>
+	<div class="info">TODO</div>
+	<div class="grid-container">
+		<Grid />
+	</div>
+	<div class="info">TODO</div>
 </main>
 
 <style>
 	.game {
-		display: grid;
+		display: grid-container;
 		place-content: center;
 	}
 	.info {

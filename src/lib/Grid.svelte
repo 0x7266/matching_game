@@ -11,8 +11,9 @@
 <style>
 	.grid {
 		display: grid;
-		height: 100%;
+		gap: 0.5em;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(4, 1fr);
+		height: 100%;
 	}
 </style>

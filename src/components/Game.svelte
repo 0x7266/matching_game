@@ -1,11 +1,19 @@
 <script lang="ts">
 	import Grid from "./Grid.svelte";
+	import { levels } from "../lib/levels";
+	import { create_grid } from "../lib/create_grid";
+
+	const level = levels[0];
+
+	let size = level.size;
+	let grid = create_grid(level);
+	let found = [];
 </script>
 
 <main class="game">
 	<div class="info">TODO</div>
 	<div class="grid-container">
-		<Grid />
+		<Grid {grid} />
 	</div>
 	<div class="info">TODO</div>
 </main>

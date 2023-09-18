@@ -1,10 +1,12 @@
-<script>
+<script lang="ts">
 	import Cell from "./Cell.svelte";
+
+	export let grid: string[];
 </script>
 
 <div class="grid">
-	{#each Array(16) as _}
-		<Cell />
+	{#each grid as emoji}
+		<Cell {emoji} />
 	{/each}
 </div>
 

@@ -1,4 +1,8 @@
-<div class="cell">TODO</div>
+<script lang="ts">
+	export let emoji;
+</script>
+
+<div class="cell">{emoji}</div>
 
 <style>
 	.cell {

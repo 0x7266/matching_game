@@ -1,9 +1,9 @@
 <script lang="ts">
-	export let emoji;
+	export let emoji: string, selected: boolean;
 </script>
 
-<div class="cell">
-	<button />
+<div class="cell" class:flipped={selected}>
+	<button on:click />
 	<span>{emoji}</span>
 </div>
 
@@ -25,5 +25,10 @@
 	span {
 		font-size: 6em;
 		z-index: 2;
+		pointer-events: none;
+	}
+
+	.flipped button {
+		background-color: red;
 	}
 </style>

@@ -33,4 +33,10 @@
 	.flipped button {
 		background-color: red;
 	}
+
+	@media (max-width: 520px) {
+		span {
+			font-size: 3em;
+		}
+	}
 </style>

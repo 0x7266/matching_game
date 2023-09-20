@@ -21,7 +21,9 @@
 	.countdown {
 		align-items: center;
 		display: flex;
+		flex-direction: column;
 		gap: 1em;
+		justify-content: center;
 		height: 100%;
 	}
 
@@ -29,8 +31,8 @@
 		aspect-ratio: 1/1;
 		background-color: transparent;
 		border: none;
-		height: 100%;
 		position: relative;
+		width: 7em;
 	}
 
 	svg {
@@ -42,14 +44,32 @@
 	.duration {
 		background-color: #ccc;
 		flex: 1;
-		height: 1em;
+		width: 10px;
 		position: relative;
-		width: 100%;
+		height: 100%;
 	}
 
 	.remaining {
 		background-color: #999;
 		height: 100%;
 		position: absolute;
+	}
+
+	@media (max-width: 1075px) {
+		.countdown {
+			flex-direction: row;
+			width: 80vmin;
+			margin: 0 auto;
+		}
+
+		.duration {
+			height: 10px;
+		}
+	}
+
+	@media (max-width: 520px) {
+		button {
+			width: 60px;
+		}
 	}
 </style>

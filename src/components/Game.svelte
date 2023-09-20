@@ -32,17 +32,35 @@
 
 <style>
 	.game {
-		display: grid;
-		place-content: center;
+		align-items: center;
+		display: flex;
+		gap: 1.5em;
 		height: 100dvh;
+		justify-content: center;
 	}
+
 	.info {
-		height: 10vmin;
-		width: 80vmin;
+		height: 80vmin;
+		width: 10vmin;
 	}
+
 	.grid-container {
-		background-color: #704585;
 		height: 80vmin;
 		width: 80vmin;
+	}
+
+	@media (max-width: 1075px) {
+		.game {
+			flex-direction: column;
+		}
+
+		.info {
+			height: 10vmin;
+			width: 100%;
+		}
+
+		.grid-container {
+			min-width: fit-content;
+		}
 	}
 </style>

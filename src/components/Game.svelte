@@ -3,6 +3,7 @@
 	import { levels } from "../lib/levels";
 	import { create_grid } from "../lib/create_grid";
 	import Found from "./Found.svelte";
+	import Countdown from "./Countdown.svelte";
 
 	const level = levels[0];
 
@@ -12,7 +13,9 @@
 </script>
 
 <main class="game">
-	<div class="info">TODO</div>
+	<div class="info">
+		<Countdown duration={level.duration} remaining={level.duration} />
+	</div>
 	<div class="grid-container">
 		<Grid
 			on:found={(e) => {
@@ -34,7 +37,6 @@
 		height: 100dvh;
 	}
 	.info {
-		background-color: rgb(70, 11, 70);
 		height: 10vmin;
 		width: 80vmin;
 	}

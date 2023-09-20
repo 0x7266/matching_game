@@ -1,10 +1,12 @@
 <script lang="ts">
-	export let emoji: string, selected: boolean;
+	export let emoji: string, selected: boolean, found: boolean;
 </script>
 
 <div class="cell" class:flipped={selected}>
 	<button on:click />
-	<span>{emoji}</span>
+	{#if !found}
+		<span>{emoji}</span>
+	{/if}
 </div>
 
 <style>

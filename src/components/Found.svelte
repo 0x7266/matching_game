@@ -12,10 +12,20 @@
 	.found {
 		align-items: center;
 		display: flex;
+		flex-direction: column;
+
 		justify-content: center;
 		height: 100%;
 	}
 	span {
 		font-size: 3em;
+	}
+
+	@media (max-width: 1075px) {
+		.found {
+			flex-direction: row;
+			margin: 0 auto;
+			width: 80vmin;
+		}
 	}
 </style>

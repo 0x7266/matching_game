@@ -58,8 +58,8 @@
 	@media (max-width: 1075px) {
 		.countdown {
 			flex-direction: row;
-			width: 80vmin;
 			margin: 0 auto;
+			width: 80vmin;
 		}
 
 		.duration {

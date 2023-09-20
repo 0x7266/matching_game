@@ -13,7 +13,12 @@
 <main class="game">
 	<div class="info">TODO</div>
 	<div class="grid-container">
-		<Grid {grid} />
+		<Grid
+			{grid}
+			on:found={(e) => {
+				found = [...found, e.detail.emoji];
+			}}
+		/>
 	</div>
 	<div class="info">TODO</div>
 </main>

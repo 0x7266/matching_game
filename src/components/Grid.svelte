@@ -1,9 +1,12 @@
 <script lang="ts">
+	import { createEventDispatcher } from "svelte";
 	import Cell from "./Cell.svelte";
 
 	export let grid: string[];
-	let reset_timeout: number;
 
+	let dispatch = createEventDispatcher();
+
+	let reset_timeout: number;
 	let card_1 = -1;
 	let card_2 = -1;
 </script>
@@ -20,7 +23,7 @@
 				} else if (card_2 === -1) {
 					card_2 = index;
 					if (grid[card_1] === grid[card_2]) {
-						// correct
+						dispatch("found", { emoji });
 					} else {
 						// timeout so the cards flip back to initial state after 1200 ms
 						reset_timeout = setTimeout(() => {

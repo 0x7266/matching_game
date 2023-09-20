@@ -22,7 +22,7 @@
 						// incorrect
 					}
 				} else {
-					card_1 = -1;
+					card_1 = index;
 					card_2 = -1;
 				}
 			}}

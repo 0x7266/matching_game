@@ -14,6 +14,16 @@
 			on:click={() => {
 				if (card_1 === -1 && card_2 === -1) {
 					card_1 = index;
+				} else if (card_2 === -1) {
+					card_2 = index;
+					if (grid[card_1] === grid[card_2]) {
+						// correct
+					} else {
+						// incorrect
+					}
+				} else {
+					card_1 = -1;
+					card_2 = -1;
 				}
 			}}
 			selected={card_1 === index || card_2 === index}

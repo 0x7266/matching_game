@@ -13,7 +13,7 @@
 		</svg>
 	</button>
 	<div class="duration">
-		<div class="remaining" />
+		<div class="remaining" style="--p: {remaining / duration}" />
 	</div>
 </div>
 
@@ -53,6 +53,7 @@
 		background-color: #999;
 		height: 100%;
 		position: absolute;
+		width: calc(100% * var(--p));
 	}
 
 	@media (max-width: 1075px) {

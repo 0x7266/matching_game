@@ -50,10 +50,10 @@
 	}
 
 	.remaining {
-		background-color: #999;
-		height: 100%;
+		background-color: #888;
 		position: absolute;
-		width: calc(100% * var(--p));
+		width: 100%;
+		height: calc(100% * var(--p));
 	}
 
 	@media (max-width: 1075px) {
@@ -65,6 +65,11 @@
 
 		.duration {
 			height: 10px;
+		}
+
+		.remaining {
+			height: 100%;
+			width: calc(100% * var(--p));
 		}
 	}
 

@@ -1,11 +1,13 @@
 <script lang="ts">
+	import { get_emoji_svg } from "../lib/get_emoji_svg";
+
 	export let emoji: string, selected: boolean, found: boolean;
 </script>
 
 <div class="cell" class:flipped={selected}>
 	<button on:click />
 	{#if !found}
-		<span>{emoji}</span>
+		<img src={get_emoji_svg(emoji)} alt={emoji} />
 	{/if}
 </div>
 

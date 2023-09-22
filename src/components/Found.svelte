@@ -15,19 +15,21 @@
 		align-items: center;
 		display: flex;
 		flex-direction: column;
-
 		justify-content: center;
 		height: 100%;
 	}
 	img {
-		width: 10%;
+		width: 40%;
 	}
 
 	@media (max-width: 1075px) {
 		.found {
 			flex-direction: row;
 			margin: 0 auto;
-			width: 80vmin;
+		}
+
+		img {
+			width: 5%;
 		}
 	}
 </style>

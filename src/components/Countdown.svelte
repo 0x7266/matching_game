@@ -23,8 +23,9 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1em;
-		justify-content: center;
 		height: 100%;
+		justify-content: center;
+		width: 100%;
 	}
 
 	button {
@@ -47,6 +48,7 @@
 		width: 10px;
 		position: relative;
 		height: 100%;
+		rotate: 180deg;
 	}
 
 	.remaining {
@@ -60,11 +62,11 @@
 		.countdown {
 			flex-direction: row;
 			margin: 0 auto;
-			width: 80vmin;
 		}
 
 		.duration {
 			height: 10px;
+			rotate: 360deg;
 		}
 
 		.remaining {

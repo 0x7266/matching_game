@@ -26,19 +26,13 @@
 		width: 100%;
 	}
 
-	span {
-		font-size: 6em;
+	img {
+		width: 70%;
 		z-index: 2;
 		pointer-events: none;
 	}
 
 	.flipped button {
 		background-color: red;
-	}
-
-	@media (max-width: 520px) {
-		span {
-			font-size: 3em;
-		}
 	}
 </style>

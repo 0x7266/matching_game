@@ -19,8 +19,8 @@
 		justify-content: center;
 		height: 100%;
 	}
-	span {
-		font-size: 3em;
+	img {
+		width: 10%;
 	}
 
 	@media (max-width: 1075px) {

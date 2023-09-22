@@ -74,8 +74,9 @@
 	@media (max-width: 1075px) {
 		.game {
 			flex-direction: column;
-			max-width: 90dvw;
+			max-width: 60dvw;
 			margin: 0 auto;
+			padding-top: 2.5dvh;
 		}
 
 		.info {

@@ -14,6 +14,7 @@
 <style>
 	.cell {
 		align-items: center;
+		aspect-ratio: 1/1;
 		display: flex;
 		background-color: #b675c7;
 		justify-content: center;

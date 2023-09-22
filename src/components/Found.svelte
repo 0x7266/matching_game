@@ -1,10 +1,12 @@
 <script lang="ts">
+	import { get_emoji_svg } from "../lib/get_emoji_svg";
+
 	export let found: string[];
 </script>
 
 <div class="found">
 	{#each found as emoji (emoji)}
-		<span>{emoji}</span>
+		<img src={get_emoji_svg(emoji)} alt={emoji} />
 	{/each}
 </div>
 

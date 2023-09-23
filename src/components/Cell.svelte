@@ -4,36 +4,77 @@
 	export let emoji: string, selected: boolean, found: boolean;
 </script>
 
-<div class="cell" class:flipped={selected}>
-	<button on:click />
+<div class="cell" class:flipped={selected || found}>
+	<button on:click disabled={selected || found} />
+	<div class="background" class:found />
 	{#if !found}
-		<img src={get_emoji_svg(emoji)} alt={emoji} />
+		<img alt={emoji} src={get_emoji_svg(emoji)} />
 	{/if}
 </div>
 
 <style>
 	.cell {
 		align-items: center;
-		aspect-ratio: 1/1;
 		display: flex;
-		background-color: #b675c7;
 		justify-content: center;
-		position: relative;
+		transform-style: preserve-3d;
+		transform: rotateY(180deg);
+		transition: filter 0.2s;
+		transition: transform 0.4s;
+		user-select: none;
+		width: 100%;
+		height: 100%;
+	}
+
+	.cell * {
+		backface-visibility: hidden;
 	}
 
 	button {
+		align-items: center;
+		background: var(--color-2);
+		border: none;
+		border-radius: 1em;
+		display: flex;
 		height: 100%;
+		justify-content: center;
 		position: absolute;
+		transform: rotateY(180deg);
+		width: 100%;
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	button:disabled {
+		color: inherit;
+	}
+
+	.flipped {
+		transform: rotateY(0);
+		z-index: 2;
+	}
+
+	.background {
+		background: var(--color-1);
+		border: 2px solid var(--color-3);
+		border-radius: 1em;
+		height: 100%;
+		pointer-events: none;
+		position: absolute;
+		transition: border 0.2s;
 		width: 100%;
 	}
 
-	img {
-		width: 70%;
-		z-index: 2;
-		pointer-events: none;
+	.background.found {
+		border: 2px solid var(--color-2);
 	}
 
-	.flipped button {
-		background-color: red;
+	img {
+		display: block;
+		font-size: 6em;
+		height: 1em;
+		line-height: 1;
+		pointer-events: none;
+		width: 1em;
+		z-index: 2;
 	}
 </style>

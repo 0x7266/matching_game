@@ -4,9 +4,23 @@
 	padding: 0;
 }
 
+:root {
+	--color-1: #dce0e2;
+	--color-2: #c8ceda;
+	--color-3: #838fd6;
+}
+
 body {
 	align-items: center;
-	background-color: #1a1b1f;
+	background-color: var(--color-1);
 	display: flex;
 	justify-content: center;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-1: #201f1f;
+		--color-2: #4a4547;
+		--color-3: #7a7174;
+	}
 }

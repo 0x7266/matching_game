@@ -49,5 +49,6 @@
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(4, 1fr);
 		height: 100%;
+		perspective: 100dvw;
 	}
 </style>

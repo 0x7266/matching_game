@@ -33,7 +33,7 @@
 		background-color: transparent;
 		border: none;
 		position: relative;
-		width: 7em;
+		width: 6.5em;
 	}
 
 	svg {
@@ -75,7 +75,7 @@
 		}
 	}
 
-	@media (max-width: 520px) {
+	@media (max-width: 650px) {
 		button {
 			width: 60px;
 		}

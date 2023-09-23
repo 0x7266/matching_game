@@ -56,7 +56,7 @@
 	.game {
 		align-items: center;
 		display: flex;
-		gap: 1.5em;
+		gap: 1em;
 		height: 100dvh;
 		justify-content: center;
 	}
@@ -76,15 +76,12 @@
 			flex-direction: column;
 			max-width: 80vmin;
 			margin: 0 auto;
+			border: solid red;
 		}
 
 		.info {
-			height: 10vmin;
+			height: 8vmin;
 			width: 100%;
-		}
-
-		.grid-container {
-			min-width: fit-content;
 		}
 	}
 </style>

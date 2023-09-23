@@ -17,19 +17,16 @@
 		flex-direction: column;
 		justify-content: center;
 		height: 100%;
+		gap: 1em;
 	}
 	img {
-		width: 40%;
+		width: 2em;
 	}
 
 	@media (max-width: 1075px) {
 		.found {
 			flex-direction: row;
 			margin: 0 auto;
-		}
-
-		img {
-			width: 5%;
 		}
 	}
 </style>

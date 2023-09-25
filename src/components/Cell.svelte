@@ -17,6 +17,7 @@
 		align-items: center;
 		display: flex;
 		justify-content: center;
+		position: relative;
 		transform-style: preserve-3d;
 		transform: rotateY(180deg);
 		transition: filter 0.2s;

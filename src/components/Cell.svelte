@@ -35,7 +35,7 @@
 		align-items: center;
 		background: var(--color-2);
 		border: none;
-		border-radius: 1em;
+		border-radius: 0.5em;
 		display: flex;
 		height: 100%;
 		justify-content: center;

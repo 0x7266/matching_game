@@ -58,6 +58,7 @@
 		display: flex;
 		flex-direction: column;
 		font-size: min(1vmin, 0.5rem);
+		gap: 5em;
 		height: 100%;
 		justify-content: center;
 	}

@@ -56,32 +56,19 @@
 	.game {
 		align-items: center;
 		display: flex;
-		gap: 1em;
-		height: 100dvh;
+		flex-direction: column;
+		font-size: min(1vmin, 0.5rem);
+		height: 100%;
 		justify-content: center;
 	}
 
 	.info {
-		height: 80vmin;
-		width: 10vmin;
+		height: 10em;
+		width: 80em;
 	}
 
 	.grid-container {
-		height: 80vmin;
-		width: 80vmin;
-	}
-
-	@media (max-width: 1075px) {
-		.game {
-			flex-direction: column;
-			max-width: 80vmin;
-			margin: 0 auto;
-			border: solid red;
-		}
-
-		.info {
-			height: 8vmin;
-			width: 100%;
-		}
+		height: 80em;
+		width: 80em;
 	}
 </style>

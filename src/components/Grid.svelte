@@ -45,7 +45,7 @@
 <style>
 	.grid {
 		display: grid;
-		gap: 0.5em;
+		gap: 1em;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(4, 1fr);
 		height: 100%;

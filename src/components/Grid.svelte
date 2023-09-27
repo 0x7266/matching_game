@@ -11,45 +11,31 @@
 	let card_2 = -1;
 </script>
 
-<div class="grid">
-	{#each grid as emoji, index}
-		<Cell
-			on:click={() => {
-				if (card_1 === -1 && card_2 === -1) {
-					// clear the timeout when another card is selecting during the current timeout
-					clearTimeout(reset_timeout);
-					card_1 = index;
-				} else if (card_2 === -1) {
-					card_2 = index;
-					if (grid[card_1] === grid[card_2]) {
-						dispatch("found", { emoji });
-					} else {
-						// timeout so the cards flip back to initial state after 1200 ms
-						reset_timeout = setTimeout(() => {
-							card_1 = -1;
-							card_2 = -1;
-						}, 1200);
-					}
+{#each grid as emoji, index}
+	<Cell
+		on:click={() => {
+			if (card_1 === -1 && card_2 === -1) {
+				// clear the timeout when another card is selecting during the current timeout
+				clearTimeout(reset_timeout);
+				card_1 = index;
+			} else if (card_2 === -1) {
+				card_2 = index;
+				if (grid[card_1] === grid[card_2]) {
+					dispatch("found", { emoji });
 				} else {
-					card_1 = index;
-					card_2 = -1;
+					// timeout so the cards flip back to initial state after 1200 ms
+					reset_timeout = setTimeout(() => {
+						card_1 = -1;
+						card_2 = -1;
+					}, 1200);
 				}
-			}}
-			{emoji}
-			selected={card_1 === index || card_2 === index}
-			found={found.includes(emoji)}
-		/>
-	{/each}
-</div>
-
-<style>
-	.grid {
-		display: grid;
-		gap: 0.5em;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: repeat(4, 1fr);
-		height: 80em;
-		perspective: 100dvw;
-		width: 80em;
-	}
-</style>
+			} else {
+				card_1 = index;
+				card_2 = -1;
+			}
+		}}
+		{emoji}
+		selected={card_1 === index || card_2 === index}
+		found={found.includes(emoji)}
+	/>
+{/each}

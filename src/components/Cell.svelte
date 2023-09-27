@@ -4,13 +4,14 @@
 	export let emoji: string, selected: boolean, found: boolean;
 </script>
 
-<div class="cell" class:flipped={selected || found}>
-	<button on:click disabled={selected || found} />
-	<div class="background" class:found />
-	{#if !found}
-		<img alt={emoji} src={get_emoji_svg(emoji)} />
-	{/if}
-</div>
+<button
+	class="cell"
+	on:click
+	disabled={selected || found}
+	class:flipped={selected || found}
+>
+	<img alt={emoji} src={get_emoji_svg(emoji)} />
+</button>
 
 <style>
 	.cell {
@@ -39,7 +40,6 @@
 		display: flex;
 		height: 100%;
 		justify-content: center;
-		position: absolute;
 		transform: rotateY(180deg);
 		width: 100%;
 		-webkit-tap-highlight-color: transparent;
@@ -54,28 +54,12 @@
 		z-index: 2;
 	}
 
-	.background {
-		background: var(--color-1);
-		border: 2px solid var(--color-3);
-		border-radius: 1em;
-		height: 100%;
-		pointer-events: none;
-		position: absolute;
-		transition: border 0.2s;
-		width: 100%;
-	}
-
-	.background.found {
-		border: 2px solid var(--color-2);
-	}
-
 	img {
 		display: block;
-		font-size: 6em;
+		font-size: 4em;
 		height: 1em;
 		line-height: 1;
 		pointer-events: none;
 		width: 1em;
-		z-index: 2;
 	}
 </style>

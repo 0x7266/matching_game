@@ -19,65 +19,40 @@
 
 <style>
 	.countdown {
-		align-items: center;
 		display: flex;
-		flex-direction: column;
 		gap: 1em;
-		height: 100%;
-		justify-content: center;
+		align-items: center;
+		justify-content: end;
 		width: 100%;
+		height: 100%;
 	}
 
 	button {
-		aspect-ratio: 1/1;
-		background-color: transparent;
+		font-size: max(8em, 2.4rem);
+		width: 1.5em;
+		aspect-ratio: 1;
+		background: transparent;
 		border: none;
-		position: relative;
-		width: 6.5em;
+		padding: 0;
 	}
 
-	svg {
-		left: 0;
-		position: absolute;
-		top: 0;
+	button svg {
+		display: block;
 	}
 
 	.duration {
 		background-color: var(--color-2);
+		border-radius: 5px;
 		flex: 1;
-		width: 10px;
 		position: relative;
-		height: 100%;
-		rotate: 180deg;
+		height: 10px;
 	}
 
 	.remaining {
 		background-color: var(--color-3);
+		border-radius: 5px;
 		position: absolute;
-		width: 100%;
-		height: calc(100% * var(--p));
-	}
-
-	@media (max-width: 1075px) {
-		.countdown {
-			flex-direction: row;
-			margin: 0 auto;
-		}
-
-		.duration {
-			height: 10px;
-			rotate: 360deg;
-		}
-
-		.remaining {
-			height: 100%;
-			width: calc(100% * var(--p));
-		}
-	}
-
-	@media (max-width: 650px) {
-		button {
-			width: 60px;
-		}
+		height: 100%;
+		width: calc(100% * var(--p));
 	}
 </style>

@@ -38,13 +38,15 @@
 	<div class="info">
 		<Countdown duration={level.duration} {remaining} />
 	</div>
-	<Grid
-		on:found={(e) => {
-			found = [...found, e.detail.emoji];
-		}}
-		{grid}
-		{found}
-	/>
+	<div class="grid">
+		<Grid
+			on:found={(e) => {
+				found = [...found, e.detail.emoji];
+			}}
+			{grid}
+			{found}
+		/>
+	</div>
 	<div class="info">
 		<Found {found} />
 	</div>
@@ -63,6 +65,16 @@
 
 	.info {
 		height: 10em;
+		width: 80em;
+	}
+
+	.grid {
+		display: grid;
+		gap: 0.5em;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		height: 80em;
+		perspective: 100dvw;
 		width: 80em;
 	}
 </style>

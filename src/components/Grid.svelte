@@ -48,7 +48,8 @@
 		gap: 0.5em;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(4, 1fr);
-		height: 100%;
+		height: 80em;
 		perspective: 100dvw;
+		width: 80em;
 	}
 </style>

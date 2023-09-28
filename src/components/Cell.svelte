@@ -54,14 +54,14 @@
 	}
 
 	.background {
-		position: absolute;
-		width: 100%;
-		height: 100%;
 		background: var(--color-1);
 		border: 2px solid var(--color-3);
 		border-radius: 1em;
-		transition: border 0.2s;
+		height: 100%;
 		pointer-events: none;
+		position: absolute;
+		transition: border 0.2s;
+		width: 100%;
 	}
 
 	.background.found {
@@ -79,6 +79,7 @@
 		height: 1em;
 		line-height: 1;
 		pointer-events: none;
+		position: relative;
 		width: 1em;
 	}
 </style>

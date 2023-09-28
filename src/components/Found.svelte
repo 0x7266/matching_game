@@ -14,19 +14,12 @@
 	.found {
 		align-items: center;
 		display: flex;
-		flex-direction: column;
+		font-size: 2em;
 		justify-content: center;
 		height: 100%;
 		gap: 1em;
 	}
 	img {
 		width: 2em;
-	}
-
-	@media (max-width: 1075px) {
-		.found {
-			flex-direction: row;
-			margin: 0 auto;
-		}
 	}
 </style>

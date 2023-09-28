@@ -7,7 +7,18 @@
 
 <div class="found">
 	{#each found as emoji (emoji)}
-		<img in:receive={{ key: emoji }} src={get_emoji_svg(emoji)} alt={emoji} />
+		<div class="pair">
+			<img
+				in:receive={{ key: `${emoji}-a` }}
+				src={get_emoji_svg(emoji)}
+				alt={emoji}
+			/>
+			<img
+				in:receive={{ key: `${emoji}-b` }}
+				src={get_emoji_svg(emoji)}
+				alt={emoji}
+			/>
+		</div>
 	{/each}
 </div>
 

@@ -1,7 +1,8 @@
 import { crossfade } from "svelte/transition";
 import { cubicOut } from "svelte/easing";
 
-const [send, receive] = crossfade({
+export const [send, receive] = crossfade({
+	delay: 500,
 	duration: 400,
 	easing: cubicOut,
 });

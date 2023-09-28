@@ -37,5 +37,6 @@
 		{emoji}
 		selected={card_1 === index || card_2 === index}
 		found={found.includes(emoji)}
+		group={grid.indexOf(emoji) === index ? "a" : "b"}
 	/>
 {/each}

@@ -69,7 +69,7 @@
 	}
 
 	.background.found {
-		border: 2px solid var(--bg-2);
+		border: 2px solid var(--color-2);
 	}
 
 	.flipped {

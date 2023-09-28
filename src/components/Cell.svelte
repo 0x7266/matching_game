@@ -2,7 +2,7 @@
 	import { get_emoji_svg } from "../lib/get_emoji_svg";
 	import { send } from "../lib/transitions";
 
-	export let emoji: string, selected: boolean, found: boolean;
+	export let emoji: string, selected: boolean, found: boolean, group: "a" | "b";
 
 	$: console.log(found);
 </script>
@@ -12,7 +12,11 @@
 
 	<div class="background" class:found />
 	{#if !found}
-		<img alt={emoji} src={get_emoji_svg(emoji)} out:send={{ key: emoji }} />
+		<img
+			alt={emoji}
+			src={get_emoji_svg(emoji)}
+			out:send={{ key: `${emoji}-${group}` }}
+		/>
 	{/if}
 </div>
 

@@ -30,8 +30,18 @@
 		justify-content: center;
 		height: 100%;
 		gap: 1em;
+		border: solid 1px var(--color-3);
+		border-radius: 0.5em;
+		background-color: var(--color-2);
 	}
-	img {
+
+	.pair {
+		position: relative;
 		width: 2em;
+		height: 2em;
+	}
+
+	img {
+		position: absolute;
 	}
 </style>

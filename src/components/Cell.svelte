@@ -58,7 +58,7 @@
 	}
 
 	.background {
-		background: var(--color-1);
+		background: var(--color-4);
 		border: 2px solid var(--color-3);
 		border-radius: 1em;
 		height: 100%;
@@ -78,6 +78,8 @@
 	}
 
 	img {
+		filter: drop-shadow(0 0 2em rgb(255, 255, 255))
+			drop-shadow(0 0 1.3em rgb(244, 244, 244));
 		display: block;
 		font-size: 4em;
 		height: 1em;

@@ -78,8 +78,6 @@
 	}
 
 	img {
-		filter: drop-shadow(0 0 2em rgb(255, 255, 255))
-			drop-shadow(0 0 1.3em rgb(244, 244, 244));
 		display: block;
 		font-size: 4em;
 		height: 1em;

@@ -25,14 +25,14 @@
 <style>
 	.found {
 		align-items: center;
+		/* background-color: var(--color-2);
+		border: solid 1px var(--color-3);
+		border-radius: 0.5em; */
 		display: flex;
 		font-size: 2em;
 		justify-content: center;
 		height: 100%;
 		gap: 1em;
-		border: solid 1px var(--color-3);
-		border-radius: 0.5em;
-		background-color: var(--color-2);
 	}
 
 	.pair {

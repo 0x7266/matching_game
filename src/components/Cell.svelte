@@ -41,7 +41,7 @@
 
 	button {
 		align-items: center;
-		background: var(--color-2);
+		background: var(--accent);
 		border: none;
 		border-radius: 0.5em;
 		display: flex;
@@ -58,8 +58,8 @@
 	}
 
 	.background {
-		background: var(--color-4);
-		border: 2px solid var(--color-3);
+		background: var(--secondary);
+		border: 2px solid var(--accent);
 		border-radius: 1em;
 		height: 100%;
 		pointer-events: none;
@@ -69,7 +69,7 @@
 	}
 
 	.background.found {
-		border: 2px solid var(--color-2);
+		border: 2px solid var(--primary);
 	}
 
 	.flipped {

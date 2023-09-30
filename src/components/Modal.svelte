@@ -9,6 +9,7 @@
 		backdrop-filter: blur(10px);
 		display: grid;
 		height: 100%;
+		inset: 1px;
 		place-items: center;
 		position: fixed;
 		width: 100%;

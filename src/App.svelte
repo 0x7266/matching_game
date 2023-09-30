@@ -7,6 +7,7 @@
 
 {#if state !== "playing"}
 	<Modal>
+		<h1>MATCHING GAME</h1>
 		{#if state === "waiting"}
 			<div class="waiting">
 				<p>CHOOSE A LEVEL</p>
@@ -22,6 +23,12 @@
 <Game />
 
 <style>
+	h1 {
+		color: var(--accent);
+		font-size: 5em;
+		font-family: "Grandstander";
+	}
+
 	.waiting {
 		align-items: center;
 		display: flex;

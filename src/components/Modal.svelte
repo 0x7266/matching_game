@@ -6,12 +6,6 @@
 </div>
 
 <style>
-	.backdrop {
-		position: fixed;
-		background-color: rgba(0, 0, 0, 0.9);
-		height: 100%;
-		width: 100%;
-	}
 	.modal-background {
 		backdrop-filter: blur(10px);
 		display: grid;
@@ -21,6 +15,13 @@
 		position: fixed;
 		width: 100%;
 		z-index: 10;
+	}
+
+	.backdrop {
+		position: fixed;
+		background-color: rgba(0, 0, 0, 0.9);
+		height: 100%;
+		width: 100%;
 	}
 
 	.modal-content {

@@ -41,7 +41,7 @@
 	}
 
 	.duration {
-		background-color: var(--primary);
+		background-color: var(--secondary);
 		border-radius: 5px;
 		flex: 1;
 		position: relative;
@@ -49,7 +49,7 @@
 	}
 
 	.remaining {
-		background-color: var(--secondary);
+		background-color: var(--primary);
 		border-radius: 5px;
 		position: absolute;
 		height: 100%;

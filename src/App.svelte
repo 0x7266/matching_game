@@ -37,12 +37,12 @@
 
 		& p {
 			color: var(--text);
-			font-size: 2em;
-			font-weight: bold;
+			font-size: 1.8em;
 		}
 
 		& .levels {
 			display: flex;
+			justify-content: center;
 			gap: 1em;
 			width: 100%;
 		}

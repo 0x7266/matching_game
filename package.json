@@ -19,6 +19,7 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "@fontsource/grandstander": "^5.0.12"
+    "@fontsource/grandstander": "^5.0.12",
+    "@neoconfetti/svelte": "^1.0.0"
   }
 }

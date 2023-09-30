@@ -29,7 +29,7 @@
 		gap: 2em;
 
 		& p {
-			color: var(--color-5);
+			color: var(--text);
 			font-size: 2em;
 			font-weight: bold;
 		}
@@ -41,10 +41,10 @@
 		}
 
 		& button {
-			background-color: var(--color-6);
+			background-color: var(--primary);
 			border: none;
 			border-radius: 0.4em;
-			color: var(--color-5);
+			color: var(--text);
 			font-size: 2em;
 			padding: 0.3em 0.7em;
 		}

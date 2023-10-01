@@ -34,8 +34,9 @@
 
 	export function start(level: Level) {
 		size = level.size;
-		grid = create_grid(level);
 		remaining = duration = level.duration;
+		grid = create_grid(level);
+		found = [];
 		resume();
 	}
 

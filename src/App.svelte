@@ -43,7 +43,11 @@
 							game.resume();
 						}}>RESUME</button
 					>
-					<button>QUIT</button>
+					<button
+						on:click={() => {
+							state = "waiting";
+						}}>QUIT</button
+					>
 				{:else}
 					{#each levels as level}
 						<button on:click={() => game.start(level)}>{level.label}</button>

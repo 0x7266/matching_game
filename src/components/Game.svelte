@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Grid from "./Grid.svelte";
-	import { levels, type Level } from "../lib/levels";
+	import { type Level } from "../lib/levels";
 	import { create_grid } from "../lib/create_grid";
 	import Found from "./Found.svelte";
 	import Countdown from "./Countdown.svelte";

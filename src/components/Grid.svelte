@@ -28,7 +28,7 @@
 				} else {
 					// incorrect - reset after timeout so the cards flip back to initial state after 1200 ms
 					reset_timeout = setTimeout(() => {
-						card_1 = card_2 - 1;
+						card_1 = card_2 = -1;
 					}, 1200);
 				}
 			} else {

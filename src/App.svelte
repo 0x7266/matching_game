@@ -29,7 +29,17 @@
 		<div class="modal-content">
 			<h1>MATCHING GAME</h1>
 			{#if state === "won" || state === "lost"}
-				<p>you {state} the game</p>
+				<p>
+					<!-- set css var color based on 'won' or 'lost' -->
+					you
+					<span
+						style="--result-color: {state === 'won'
+							? 'green'
+							: state === 'lost'
+							? 'red'
+							: ''}">{state}</span
+					> the game
+				</p>
 			{:else if state === "paused"}
 				<p>game paused</p>
 			{:else if state === "waiting"}
@@ -110,5 +120,9 @@
 		position: fixed;
 		top: 30%;
 		width: 100%;
+	}
+
+	.modal-content span {
+		color: var(--result-color);
 	}
 </style>

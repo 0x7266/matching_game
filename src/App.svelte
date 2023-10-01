@@ -38,7 +38,11 @@
 
 			<div class="buttons">
 				{#if state === "paused"}
-					<button>RESUME</button>
+					<button
+						on:click={() => {
+							state = "playing";
+						}}>RESUME</button
+					>
 					<button>QUIT</button>
 				{:else}
 					{#each levels as level}

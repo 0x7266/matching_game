@@ -40,7 +40,7 @@
 				{#if state === "paused"}
 					<button
 						on:click={() => {
-							state = "playing";
+							game.resume();
 						}}>RESUME</button
 					>
 					<button>QUIT</button>

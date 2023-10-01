@@ -65,7 +65,11 @@
 			on:found={(e) => {
 				found = [...found, e.detail.emoji];
 				if (found.length === (size * size) / 2) {
-					dispatch("win");
+					playing = false;
+					setTimeout(() => {
+						playing = false;
+						dispatch("win");
+					}, 1000);
 				}
 			}}
 			{grid}

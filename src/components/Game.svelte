@@ -4,7 +4,7 @@
 	import { create_grid } from "../lib/create_grid";
 	import Found from "./Found.svelte";
 	import Countdown from "./Countdown.svelte";
-	import { createEventDispatcher, onMount } from "svelte";
+	import { createEventDispatcher } from "svelte";
 
 	const dispatch = createEventDispatcher();
 

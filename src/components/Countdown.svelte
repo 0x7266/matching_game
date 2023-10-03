@@ -1,8 +1,10 @@
 <script lang="ts">
+	import { fade } from "svelte/transition";
+
 	export let remaining: number, duration: number;
 </script>
 
-<div class="countdown">
+<div class="countdown" transition:fade={{ duration: 200 }}>
 	<button on:click
 		><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 			<title>Pause</title>

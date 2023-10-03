@@ -3,8 +3,6 @@
 	import { send } from "../lib/transitions";
 
 	export let emoji: string, selected: boolean, found: boolean, group: "a" | "b";
-
-	$: console.log(found);
 </script>
 
 <div class="cell" class:flipped={selected || found}>

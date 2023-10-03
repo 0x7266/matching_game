@@ -7,8 +7,8 @@
 	let dispatch = createEventDispatcher();
 
 	let reset_timeout: number;
-	let card_1 = -1;
-	let card_2 = -1;
+	let card_1: number;
+	let card_2: number;
 </script>
 
 {#each grid as emoji, index}
